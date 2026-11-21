@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swap Request — SkillSwap</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="swap-request.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="home.html" class="logo">
+    <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M4 12 C4 7, 9 4, 14 6 L14 10 L20 6 L20 14 L14 10" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M28 20 C28 25, 23 28, 18 26 L18 22 L12 26 L12 18 L18 22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    SkillSwap
+  </a>
+
+  <form class="search" role="search">
+    <input type="search" placeholder="Search a skill — guitar, Figma, Spanish…" aria-label="Search skills">
+  </form>
+
+  <nav class="nav-links">
+    <a href="browse.html">Browse</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+</header>
+
+<section class="auth-wrap">
+  <form class="auth-card" id="requestForm" novalidate>
+    <span class="auth-kicker">Swap request</span>
+    <h1>Send a swap request</h1>
+    <p class="auth-sub" id="requestIntro">Tell them what you want to learn and what you can teach in return.</p>
+
+    <div class="field">
+      <label for="toEmail">Send To (Email)</label>
+      <input type="email" id="toEmail" name="toEmail" required>
+    </div>
+
+    <div class="field field-learn">
+      <label for="skillWanted">Skill You're Requesting</label>
+      <input type="text" id="skillWanted" name="skillWanted" placeholder="e.g. Spanish" required>
+    </div>
+
+    <div class="field field-teach">
+      <label for="skillOffered">Skill You're Offering in Return</label>
+      <input type="text" id="skillOffered" name="skillOffered" placeholder="e.g. Guitar" required>
+    </div>
+
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Say hi and suggest a time to meet"></textarea>
+    </div>
+
+    <p class="form-msg" id="formMsg" role="status"></p>
+
+    <button type="submit" class="btn btn-primary btn-block" id="sendBtn">Send Request</button>
+
+    <div class="request-status" id="requestStatus">
+      <span class="status-label">Status</span>
+      <span class="status-chip pending">Pending Response</span>
+      <a href="dashboard.html" class="inline-link">View in Dashboard</a>
+    </div>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <span>SkillSwap — trade skills, not money.</span>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="contactus.html">Contact</a>
+    <a href="browse.html">Browse Skills</a>
+  </nav>
+</footer>
+
+<script src="swap-request.js"></script>
+</body>
+</html>

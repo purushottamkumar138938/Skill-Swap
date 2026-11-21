@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SkillSwap — Trade What You Know</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="#" class="logo">
+    <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M4 12 C4 7, 9 4, 14 6 L14 10 L20 6 L20 14 L14 10" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M28 20 C28 25, 23 28, 18 26 L18 22 L12 26 L12 18 L18 22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    SkillSwap
+  </a>
+
+  <form class="search" role="search">
+    <input type="search" placeholder="Search a skill — guitar, Figma, Spanish…" aria-label="Search skills">
+  </form>
+
+  <nav class="nav-links">
+    <a href="browse.html">Browse</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html" class="btn btn-primary">+ List a Skill</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Teach what you know.<br>Learn what you don't.</h1>
+    <p>No tuition fees, no middlemen — just people trading an hour of their skill for an hour of someone else's. Find a match and start swapping.</p>
+    <div class="hero-actions">
+      <a href="browse.html" class="btn btn-primary">Browse Skills</a>
+      <a href="about.html" class="btn btn-ghost">How it works</a>
+    </div>
+  </div>
+
+  <div class="hero-visual" aria-hidden="true">
+    <div class="swap-card card-teach">
+      <span class="swap-label">Teaches</span>
+      <strong>Acoustic Guitar</strong>
+    </div>
+    <svg class="swap-arrows" viewBox="0 0 120 120">
+      <path d="M20 40 Q 60 10, 95 35" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M85 28 L 95 35 L 86 44" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M100 80 Q 60 110, 25 85" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M35 92 L 25 85 L 34 76" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div class="swap-card card-learn">
+      <span class="swap-label">Wants to learn</span>
+      <strong>UI Design</strong>
+    </div>
+  </div>
+</section>
+
+<section class="featured">
+  <h2>Featured Skills</h2>
+
+  <div class="skill-grid">
+
+    <article class="skill-card">
+      <div class="thumb thumb-sound">
+        <svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 5V4L8 9H4z" fill="currentColor"/><path d="M16 8a5 5 0 0 1 0 8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </div>
+      <div class="skill-body">
+        <span class="tag">Music</span>
+        <h3>Guitar Basics for Beginners</h3>
+        <p class="teacher">Taught by Ankit R.</p>
+        <div class="rating" aria-label="4.5 out of 5 stars">★★★★☆</div>
+      </div>
+    </article>
+
+    <article class="skill-card">
+      <div class="thumb thumb-design">
+        <svg viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" fill="currentColor"/><rect x="13" y="4" width="7" height="7" fill="currentColor" opacity=".5"/><rect x="4" y="13" width="7" height="7" fill="currentColor" opacity=".5"/><rect x="13" y="13" width="7" height="7" fill="currentColor"/></svg>
+      </div>
+      <div class="skill-body">
+        <span class="tag">Design</span>
+        <h3>UI/UX Design in Figma</h3>
+        <p class="teacher">Taught by Priya S.</p>
+        <div class="rating" aria-label="5 out of 5 stars">★★★★★</div>
+      </div>
+    </article>
+
+    <article class="skill-card">
+      <div class="thumb thumb-lang">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c3 3.6 3 14.4 0 18M12 3c-3 3.6-3 14.4 0 18" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      </div>
+      <div class="skill-body">
+        <span class="tag">Language</span>
+        <h3>Conversational Spanish</h3>
+        <p class="teacher">Taught by Meera K.</p>
+        <div class="rating" aria-label="4 out of 5 stars">★★★★☆</div>
+      </div>
+    </article>
+
+    <article class="skill-card">
+      <div class="thumb thumb-code">
+        <svg viewBox="0 0 24 24"><path d="M8 6 2 12l6 6M16 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="skill-body">
+        <span class="tag">Tech</span>
+        <h3>Python for Beginners</h3>
+        <p class="teacher">Taught by Rohan D.</p>
+        <div class="rating" aria-label="5 out of 5 stars">★★★★★</div>
+      </div>
+    </article>
+
+    <article class="skill-card">
+      <div class="thumb thumb-art">
+        <svg viewBox="0 0 24 24"><path d="M12 3C6 3 2 7 2 12c0 3 2 4 4 4h1a1.5 1.5 0 0 1 0 3c-.6.6-.2 2 1 2 5.5 0 9.5-4.5 9.5-9.5C17.5 6.6 15 3 12 3Z" fill="currentColor"/><circle cx="8" cy="10" r="1" fill="#fff"/><circle cx="12" cy="7.5" r="1" fill="#fff"/><circle cx="16" cy="10" r="1" fill="#fff"/></svg>
+      </div>
+      <div class="skill-body">
+        <span class="tag">Art</span>
+        <h3>Watercolor Painting</h3>
+        <p class="teacher">Taught by Simran A.</p>
+        <div class="rating" aria-label="4.5 out of 5 stars">★★★★☆</div>
+      </div>
+    </article>
+
+    <article class="skill-card">
+      <div class="thumb thumb-fit">
+        <svg viewBox="0 0 24 24"><path d="M4 12h2m12 0h2M8 8v8m8-8v8M8 12h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </div>
+      <div class="skill-body">
+        <span class="tag">Fitness</span>
+        <h3>Beginner Strength Training</h3>
+        <p class="teacher">Taught by Varun T.</p>
+        <div class="rating" aria-label="4 out of 5 stars">★★★★☆</div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <span>SkillSwap — trade skills, not money.</span>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="contactus.html">Contact</a>
+    <a href="browse.html">Browse Skills</a>
+  </nav>
+</footer>
+
+</body>
+</html>
